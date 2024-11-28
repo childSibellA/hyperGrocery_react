@@ -1,0 +1,15 @@
+.table {
+    width: 100%;
+    background-color: var(--popup_secondary_background);
+  }
+  
+  .td {
+    border: 1px solid #9b9a9a8e;
+    padding: 8px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+  

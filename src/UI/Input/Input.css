@@ -1,0 +1,896 @@
+/* default input */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.custom-arrow {
+  position: relative;
+}
+
+.custom-arrow-up {
+  position: absolute;
+  top: 35px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.custom-arrow-down {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.custom-arrow-up:hover,
+.custom-arrow-down:hover {
+  opacity: 1;
+}
+
+.custom-arrow-up svg path,
+.custom-arrow-down svg path {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  gap: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.form-control {
+  width: 100%;
+  padding: 11.5px 16px 11.5px 16px;
+  background-color: transparent;
+  border: var(--kant_border_color);
+  border-radius: 16px;
+  background: #eeeeee;
+  color: #3e54ac;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  height: 44px;
+}
+
+.input-group-icon {
+  position: absolute;
+  right: 11.5px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.input-group-icon-sc {
+  position: absolute;
+  z-index: 1;
+  right: 11.5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  pointer-events: initial;
+  opacity: 0.6;
+}
+
+.opacity-0 {
+  opacity: 0;
+  display: none;
+}
+
+.opacity-1 {
+  opacity: 0.6;
+}
+
+.input-group-icon-sc:hover {
+  opacity: 1;
+}
+
+.relative {
+  position: relative;
+}
+
+.input-group-icon-sc path {
+  fill: #cdced1;
+}
+
+.form-control:hover {
+  border: 1px solid rgba(195, 140, 92, 0.6);
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.form-control:focus {
+  border: 1px solid rgba(100, 95, 95, 0.571);
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.success {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.disabled {
+  opacity: 0.2;
+  pointer-events: none;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+/* end of default input */
+
+/* label input */
+.input-group-lable {
+  /* position: relative; */
+  width: 100%;
+  max-width: 325px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group-item,
+.select-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.input-group-title {
+  text-transform: capitalize;
+}
+
+.input-group-title span {
+  color: #6a6d76;
+  margin-left: 5px;
+}
+
+.input-form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+}
+
+.input-form-inner {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.input-form-frame-outer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.input-group-text-sc {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.input-toggle {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.input-toggle p {
+  color: #9c9da3;
+  text-transform: capitalize;
+}
+
+.input-group-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 11.5px;
+  right: 11.5px;
+  /* width: 29px; */
+  padding: 1px 6px;
+  height: 18px;
+  background-color: #1f2330;
+  border-radius: 13px;
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.6;
+  padding-bottom: 1px;
+}
+
+.input-form-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  padding: 12px 14px;
+  /* width: 42px!important;
+    height: 42px!important; */
+  /* padding: 12px 8px; */
+  background-color: #1f2330;
+  border-radius: 8px;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.input-group-frame-secondary {
+  font-size: 10px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 29px; */
+  padding: 1px 6px;
+  height: 17px;
+  background-color: #1f2330;
+  border-radius: 13px;
+  text-transform: uppercase;
+}
+
+.input-group-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.error-border {
+  border: 1px solid rgb(239, 83, 80) !important;
+}
+
+/* select input */
+
+.select-control {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 13px;
+  cursor: pointer;
+}
+
+.select-prefix {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: calc(13% - 3.5px);
+}
+.select-prefix svg path {
+  stroke: #3e54ac;
+}
+.select-sufix svg path {
+  fill: #3e54ac;
+}
+
+.select-sufix {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: calc(77% - 3.5px);
+  color: #3e54ac;
+}
+
+.number-control {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #3e54ac;
+}
+
+.number-control[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.select-body {
+  color: #766a6a;
+}
+
+.arrow {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.rotate {
+  transform: rotate(-180deg);
+}
+
+.visible {
+  display: block !important;
+}
+
+.hidden {
+  display: none;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.flag img {
+  width: 24px;
+  height: 12px;
+}
+
+.flag {
+  width: 24px;
+  height: 12px;
+  color: #3e54ac;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.upload-group-title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upload-group-title p:last-child {
+  color: #ef5350;
+}
+
+.upload-group-inner {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  width: 100%;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.upload-group-placeholder {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-group-text {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.upload-group-text p:first-child {
+  color: #9c9da3;
+}
+
+.upload-btn {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+.upload-control {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.avatar-sm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 58px;
+  height: 58px;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.delete-btn {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: rgba(100, 95, 95, 0.571) !important;
+}
+
+/* search input */
+.search-input {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-control {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  text-transform: capitalize;
+}
+
+.search-input-item {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 16px;
+}
+
+.search-control::-webkit-search-cancel-button {
+  display: none;
+}
+
+.select-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 37px;
+  cursor: pointer;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.form-select-item .arrow-none {
+  display: none;
+}
+
+.form-select-item .arrow-show {
+  display: flex;
+}
+
+.form-select {
+  position: relative;
+}
+
+.select-modal {
+  display: block !important;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  z-index: 1;
+  /* width: 150px; */
+  /* background-color: red; */
+}
+
+.select-modal-sc {
+  display: flex !important;
+  position: absolute;
+  /*top: 50px;*/
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.select-position-top {
+  top: unset !important;
+  bottom: 50px !important;
+}
+
+.form-select-sc {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.form-select-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* date picker */
+.react-datepicker {
+  background: #0a0f18 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3) !important;
+  border-radius: 4px;
+  width: 255px !important;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.react-datepicker div {
+  color: white;
+}
+
+.react-datepicker__header {
+  background: #0a0f18 !important;
+  border-bottom: none !important;
+  padding-bottom: 0px !important;
+  width: 252px !important;
+}
+
+.react-datepicker__header:after {
+  content: "";
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 8px;
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+
+.react-datepicker__day {
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-left: 0.3rem !important;
+  margin-right: 0.3rem !important;
+}
+
+.react-datepicker__day--disabled {
+  color: #4d5057 !important;
+}
+
+.react-datepicker__day--selected {
+  background: rgba(100, 95, 95, 0.571) !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: rgba(255, 0, 0, 0.571) !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-width: 1px 1px 0 0 !important;
+  width: 6px !important;
+  height: 6px !important;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 11px !important;
+}
+
+.react-datepicker__time-list-item {
+  width: 100% !important;
+}
+
+.react-datepicker__day-name {
+  margin: 0.3rem !important;
+}
+
+.react-datepicker__time-container {
+  float: none;
+  width: 252px !important;
+}
+
+.react-datepicker__time {
+  width: 252px !important;
+}
+
+.react-datepicker__time-box {
+  width: 252px !important;
+  margin-left: 1 !important;
+  margin-right: 1 !important;
+  text-align: left !important;
+}
+
+.react-datepicker__time-list-item {
+  border-radius: 2px;
+}
+
+/* 1px solid rgba(255, 255, 255, 0.1) */
+
+.react-datepicker__time {
+  background: #0a0f18 !important;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: rgba(255, 0, 0, 0.571) !important;
+}
+
+.react-datepicker__time-list-item:hover {
+  opacity: 0.8 !important;
+}
+
+.react-datepicker__triangle {
+  display: none;
+}
+
+.phone-numbers input[type="number"]::-webkit-outer-spin-button,
+.phone-numbers input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  background-color: red;
+}
+
+.phone-numbers input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.phone-numbers .select-control {
+  gap: initial;
+}
+
+.flag-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: calc(100% - 10px);
+  color: #3e54ac;
+}
+
+.disabled-input {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.phone-number-active {
+  top: 100px;
+  z-index: 2;
+  display: flex !important;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.form-multiply .flag-wrapper {
+  flex-wrap: wrap;
+  max-height: 85px;
+  overflow-y: auto;
+  position: relative;
+  z-index: 10;
+}
+
+.form-multiply.form-control {
+  height: auto;
+  position: relative;
+}
+
+.multiply-select-item {
+  background: #1f2330;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.close-multiply-select-item {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  cursor: pointer;
+}
+
+.close-multiply-select-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.close-multiply-select-item svg {
+  height: 4px;
+}
+
+.form-multiply-clicker {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.textarea-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+.textarea-input {
+  width: 100%;
+  padding: 11.5px 16px 11.5px 16px;
+  background-color: transparent;
+  border-radius: 6px;
+  border: var(--kant_border_color);
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.textarea-input:hover {
+  border: 1px solid #ffc20cda;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.textarea-input-header {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.range-ttls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.range-ttls div {
+  font-size: 10px;
+}
+
+/* Basic styling for the container and label */
+.checkbox-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Hide the actual checkbox */
+.input-checkbox {
+  display: none;
+}
+
+/* Style for the custom checkbox */
+.custom-checkbox {
+  width: 20px;
+  /* Width of the checkbox */
+  height: 20px;
+  /* Height of the checkbox */
+  background: rgba(255, 255, 255, 0.5);
+  /* Background color of the checkbox */
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 4px;
+  /* Rounded corners for the checkbox */
+}
+
+/* Style when the checkbox is checked */
+.input-checkbox:checked + .custom-checkbox {
+  background: rgba(100, 95, 95, 0.571);
+  /* Background color when selected */
+}
+
+/* Checkmark styling */
+.input-checkbox:checked + .custom-checkbox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  /* Color of the check */
+  border-radius: 50%;
+  /* Makes the checkmark circular */
+}
+
+/* Optional: Style for the disabled state */
+.disabled-checkbox + .custom-checkbox {
+  background: rgba(255, 255, 255, 0.5);
+  cursor: not-allowed;
+}
+.input__plus-minus input {
+  width: 100%;
+  background: transparent;
+}
+.input-input__plus-minus-btns {
+  /* width: 25px; */
+  position: absolute;
+  right: 6px;
+  align-items: center;
+  bottom: 12px;
+  display: flex;
+}
+.input-input__plus-minus-btns > div:hover path {
+  fill: rgba(100, 95, 95, 0.571);
+}
+.input-input__plus-minus-btns > div {
+  /* width: 25px; */
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button-in-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  background-color: var(--button_background_color);
+  border: var(--kant_border_color);
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2px 6px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.button-in-input svg path {
+  fill: var(--button_color);
+}
+
+.button-wrapper:hover .button-in-input svg path {
+  fill: var(--active_color);
+}
+
+.button-in-input:hover {
+  background-color: var(--hover_background_color);
+  color: var(--active_color);
+}
+
+.valuesContainer {
+  background-color: var(--popup_background);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+.valuesContainer h4 {
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+
+.valuesContainer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.valuesContainer li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* To accommodate any additional buttons */
+  padding: 10px 15px;
+  border: var(--kant_border_color);
+  border-radius: 4px;
+  background-color: var(--popup-lite-background);
+  color: var(--color-primary);
+  margin-bottom: 10px; /* Spacing between list items */
+  transition: background-color 0.3s;
+}
+
+.valuesContainer li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+}
+
+.valuesContainer li:last-child {
+  margin-bottom: 0; /* Remove bottom margin for last item */
+}

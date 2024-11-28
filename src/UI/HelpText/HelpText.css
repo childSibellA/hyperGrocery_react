@@ -1,0 +1,14 @@
+.hidden {
+  display: none;
+}
+.status-group {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: auto;
+  gap: 8px;
+}
+.status-group-inner {
+  display: flex;
+  /* align-self: flex-start; */
+}

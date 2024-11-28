@@ -1,0 +1,45 @@
+.detailsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 20px;
+  max-height: calc(100vh - 150px);
+  background-color: var(--popup_background);
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+.detailsContainer h2 {
+  grid-column: span 2; /* Ensures the heading spans both columns */
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--color-primary); /* Changed to white for better contrast */
+  border-bottom: 2px solid #444; /* Darker border for contrast */
+  padding-bottom: 10px;
+}
+
+.detailsContainer h3 {
+  grid-column: span 2;
+  margin-top: 20px;
+  font-size: 20px;
+  color: var(--color-primary); /* For better visibility */
+}
+
+.detailsContainer p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-primary); /* Light gray for readability */
+}
+
+.serviceItem {
+  grid-column: span 2; /* Service items span both columns */
+  padding: 10px;
+  background: var(--popup-lite-background);
+  border-radius: 5px;
+}
+
+.detailsContainer strong {
+  color: var(--color-secondary); /* Light color for better contrast */
+}

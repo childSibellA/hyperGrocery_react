@@ -1,0 +1,121 @@
+.filter-box-container {
+  border: var(--kant_border_color);
+  border-radius: 15px;
+}
+
+.filter-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.show-filters {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.filter-box-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-box-list__item {
+  padding: 6px 30px;
+  cursor: pointer;
+}
+
+.list-item__active {
+  background: var(--active_background_color);
+  border-radius: 6px;
+  color: var(--active_color);
+}
+
+.advanced-search-btn,
+.search-btn-active {
+  border: var(--kant_border_color);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+}
+
+.search-btn-active {
+  background: var(--active_background_color);
+  color: var(--active_color);
+}
+
+.advanced-search-btn svg path {
+  fill: var(--color-primary);
+}
+
+.search-btn-active svg path {
+  fill: var(--active_color);
+}
+
+.advanced-search-btn svg,
+.search-btn-active svg {
+  margin-right: 6px;
+}
+
+.filter-box-search-container {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  max-height: 0;
+  pointer-events: none;
+}
+
+.filter-box-container-active {
+  max-height: 1000px;
+  pointer-events: all;
+}
+
+.filter-box-search {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.filter-box-container-active .filter-box-search {
+  opacity: 1;
+}
+
+.filter-box-input {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.filter-box-selects {
+  display: grid;
+  grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+  gap: 20px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .filter-box {
+    gap: 10px;
+  }
+  .advanced-search-btn,
+  .search-btn-active {
+    width: 100%;
+    justify-content: center;
+  }
+  .filter-box-list__item {
+    width: 100%;
+    text-align: center;
+  }
+  .filter-box-search {
+    gap: 10px;
+  }
+  .filter-box-selects {
+    grid-template-columns: 100%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .filter-box-list {
+    flex-wrap: wrap;
+  }
+}

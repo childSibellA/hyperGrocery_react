@@ -1,0 +1,96 @@
+/* Legal.module.css */
+
+.container {
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  color: var(--color-primary);
+  max-width: 60%;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: var(--color-secondary);
+}
+
+.text {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+  text-indent: 20px;
+}
+
+h2.subtitle {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: var(--color-primary);
+}
+
+p.text {
+  font-size: 1em;
+  color: var(--color-secondary);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1023px) {
+  .container {
+    max-width: 80%; /* Slightly wider on smaller screens */
+    padding: 15px; /* Reduce padding */
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%; /* Slightly wider on smaller screens */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .title {
+    font-size: 2em; /* Slightly smaller font size */
+  }
+
+  .subtitle {
+    font-size: 1.5em; /* Increase subtitle size for better readability */
+  }
+
+  .text,
+  p.text {
+    font-size: 0.9em; /* Reduce font size for smaller devices */
+    text-indent: 15px; /* Adjust text indent */
+  }
+
+  h2.subtitle {
+    font-size: 1.3em; /* Smaller size for h2 on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px; /* Further reduce padding */
+  }
+
+  .title {
+    font-size: 1.8em; /* Smaller title size for very small screens */
+  }
+
+  .subtitle {
+    font-size: 1.3em; /* Smaller subtitle size */
+  }
+
+  .text,
+  p.text {
+    font-size: 0.85em; /* Further reduce font size */
+  }
+
+  h2.subtitle {
+    font-size: 1.2em; /* Further reduce h2 size */
+  }
+}

@@ -1,0 +1,65 @@
+.companyDetails {
+  padding: 16px;
+  background-color: #f4f4f4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-height: calc(100vh - 100px);
+  margin: 0 auto;
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.companyDetails h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.companyDetails h3 {
+  font-size: 1.1rem;
+  margin-top: 14px;
+  color: #333;
+}
+
+.companyDetails p,
+.companyDetails li {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+.companyDetails strong {
+  color: #222;
+}
+
+.companyDetails img {
+  margin-top: 8px;
+  max-width: 80px;
+  height: auto;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.companyDetails .logos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.companyDetails ul {
+  padding-left: 18px;
+  list-style-type: disc;
+}
+
+.companyDetails li {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.companyDetails .socialMedia p {
+  font-size: 0.95rem;
+  margin: 4px 0;
+}
+
+.companyDetails .sectionList,
+.companyDetails .paymentMethods {
+  margin-bottom: 10px;
+}

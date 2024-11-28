@@ -1,0 +1,124 @@
+.popup-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px 10px 20px;
+  align-items: center;
+  background: var(--body_background);
+  border-radius: 16px 16px 0 0;
+}
+
+.popup-header-label {
+  color: var(--color_head);
+}
+
+.popup-header svg {
+  cursor: pointer;
+}
+
+.popup-header path {
+  stroke: var(--color_head);
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+.popup-header svg:hover path {
+  stroke: var(--hover_color);
+}
+.delimiter {
+  display: flex;
+  align-items: center;
+}
+.delimiter .line {
+  height: 1px;
+  width: 50%;
+  background: rgb(197, 7, 7);
+}
+.copy-address {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.copy-address-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copy-address-text {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+  overflow-wrap: anywhere;
+  font-size: 12px;
+  color: #d87b1e;
+}
+
+.address-balance-cont {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #9c9da3;
+  gap: 5px;
+}
+.address-balance {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+.copy-address path {
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+.copy-address:hover path {
+  stroke: rgba(100, 95, 95, 0.571);
+}
+.copy-address:hover .copy-address-text {
+  color: #fff;
+}
+
+.goBackWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.goBackSvg {
+  display: flex;
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.goBackSvg svg {
+  position: initial;
+}
+
+.popup-header-head {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.popup-header-description {
+  color: #cdced1;
+  max-width: 500px;
+}
+
+/* tb-head */
+.tb-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 0 11px 0;
+  border-bottom: var(--kant_border_color);
+}
+.right-panel {
+  display: flex;
+  gap: 10px;
+}
+.left-panel p {
+  color: #9c9da3;
+  max-width: 500px;
+}
+.tb-head-center .left-panel {
+  text-align: center;
+}

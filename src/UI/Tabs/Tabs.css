@@ -1,0 +1,22 @@
+.tabs {
+  display: flex;
+  background-color: var(--popup_background);
+}
+
+.tab {
+  /* border-bottom: var(--kant_border_color); */
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab:hover {
+  color: var(--hover_color);
+}
+
+.active-tab {
+  border-bottom: red;
+  transition: 0.5s;
+  background-color: var(--active_background_color);
+  color: var(--active_color);
+}

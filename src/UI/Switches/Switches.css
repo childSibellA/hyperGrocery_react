@@ -1,0 +1,72 @@
+.form-switch {
+  display: flex;
+  position: relative;
+}
+.form-switch input {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 5;
+}
+.form-switch input:checked ~ .check {
+  background: rgb(0, 0, 0);
+  border: 1px solid #393c48;
+}
+.check {
+  display: flex;
+  width: 24px;
+  height: 16px;
+  background: #eeeeee;
+  border: 1px solid #393c48;
+  border-radius: 12px;
+  position: relative;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+.form-switch input:checked ~ .check i {
+  transform: translateX(8px);
+  background: #eeeeee;
+}
+.check i {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  background: #000000;
+  border-radius: 50%;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.size input:checked ~ .check i {
+  transform: translateX(15px);
+  background: #fff;
+}
+.size .check {
+  display: flex;
+  width: 38px;
+  height: 24px;
+  background: #070b1a;
+  border: 1px solid #454839;
+  border-radius: 12px;
+  position: relative;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+.size .check i {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  background: #9c9da3;
+  border-radius: 50%;
+  transition: 0.6s cubic-bezier(0.79, 0.01, 0.15, 0.99);
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

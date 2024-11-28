@@ -1,0 +1,130 @@
+.profilePage {
+  padding: 20px;
+  width: calc(100% - 240px);
+}
+
+.container {
+  margin: 0 auto;
+  border-radius: 8px;
+  border: var(--kant_border_color);
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logoSection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.companyInfo {
+  margin-bottom: 20px;
+}
+
+.companyName {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.infoBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.additionalInfo {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.paymentMethods {
+  margin-top: 20px;
+}
+
+.paymentMethod {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: #f5f5f5;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.status {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.active {
+  color: green;
+  font-weight: bold;
+}
+
+.inactive {
+  color: red;
+  font-weight: bold;
+}
+
+.saveSection {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.saveButton {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.saveButton:hover {
+  background-color: #45a049;
+}

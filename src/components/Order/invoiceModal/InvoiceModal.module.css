@@ -1,0 +1,97 @@
+.orderDetails {
+  background-color: var(--popup_background);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+.orderDetails p {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  padding: 10px 15px;
+  border: var(--kant_border_color);
+  border-radius: 4px;
+  background-color: var(--popup-lite-background);
+  color: var(--color-primary);
+}
+
+.fields {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.servicesList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.serviceContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: var(--popup-lite-background);
+  border-radius: 4px;
+  border: 1px solid rgba(100, 95, 95, 0.571);
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #666;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkboxContainer .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.disscountContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+}

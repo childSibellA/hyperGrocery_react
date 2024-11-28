@@ -1,0 +1,171 @@
+.popup-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.popup-wrapper-container {
+  background: #070b1a;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.popup-wrapper {
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 600px;
+}
+
+@media (max-width: 767px) {
+  .popup-wraper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+/* AddToken styles */
+.addTransaction-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-top: 2px solid rgb(32, 36, 49);
+  border-right: 2px solid rgb(32, 36, 49);
+  border-bottom: none;
+  border-left: 2px solid rgb(32, 36, 49);
+  background: rgb(20, 23, 38);
+  border-radius: 0px 0px 8px 8px;
+  gap: 20px;
+  width: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+.mt-22 {
+  margin-top: 22px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.withdraw-details {
+  background: #0e1221;
+  border-radius: 18px;
+  margin-top: 40px;
+}
+.popup-item {
+  padding: 0 20px;
+  height: 88px;
+}
+.mt-8 {
+  margin-top: 8px;
+}
+.align-right {
+  text-align: right;
+}
+.withdraw-title {
+  padding: 20px;
+}
+.withdraw-wraper > div:nth-child(odd) {
+  background-color: #070b1a !important;
+}
+
+@media (max-width: 767px) {
+  .mobile-flex {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .mobile-flex div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+  .mobile-flex div:nth-child(1) {
+    margin-bottom: 10px;
+  }
+}
+
+/*  WithdrawSettings styles */
+.withdraw-settings-main-fixed-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #070b1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  position: fixed;
+  overflow-y: auto;
+}
+.withdraw-settings-main-fixed-container .withdraw-settings-main-wrapp {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  backdrop-filter: blur(42.5px);
+  width: 596px;
+}
+.withdraw-settings-main-fixed-container .withdraw-settings-body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+.withdraw-settings-main-fixed-container .withdraw-input-wrapp {
+  width: 100%;
+}
+.withdraw-settings-main-fixed-container .input-and-form-definition {
+  display: flex;
+  gap: 8px;
+}
+.withdraw-settings-main-fixed-container .input-and-form-definition p {
+  font-size: 12px;
+  color: #6a6d76;
+}
+.withdraw-settings-main-fixed-container .withdraw-settings-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.withdraw-settings-main-fixed-container .withdraw-settings-button {
+  background-color: rgba(255, 0, 0, 0.571);
+  border-radius: 32px;
+  width: 100%;
+  padding: 12px 0;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.6s;
+}
+.withdraw-settings-main-fixed-container .withdraw-settings-button:hover {
+  background-color: #0221d2;
+}
+
+/* addAdmin styles */
+.addAdmin-container {
+  background: var(--popup_background);
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

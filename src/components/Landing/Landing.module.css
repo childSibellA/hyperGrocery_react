@@ -1,0 +1,425 @@
+.container {
+}
+
+.introSectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 50px;
+  padding: 20px;
+}
+
+.title {
+  font-size: 48px;
+  color: #eeeeee;
+  /* width: 60%; */
+  line-height: 1;
+  /* z-index: 2; */
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.text {
+  text-align: center;
+  font-size: 19px;
+  color: #eeeeee;
+}
+
+.registerButton {
+  background-color: #eeeeee;
+  color: #3e54ac;
+  padding: 16px 28px;
+  border-radius: 32px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 100;
+}
+
+.registerButton:hover {
+  opacity: 0.6;
+}
+
+.decorRotatedElement {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 120%;
+  height: 100%;
+  bottom: -70%;
+  transform: rotate(-10deg);
+}
+
+.sectionBody {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.sectionContent {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionContent img {
+  width: 100%;
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 40%; */
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  z-index: 100;
+}
+
+.subtitle {
+  font-size: 40px;
+  z-index: 2;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.desctitle {
+  font-size: 30px;
+  width: 200px;
+  z-index: 2;
+  line-height: 1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #3e54ac;
+}
+
+.textBlue {
+  font-size: 20px;
+  color: #3e54ac;
+  z-index: 2;
+  text-indent: 20px;
+}
+
+.serviceList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.serviceItem {
+  background-color: #3e54ac;
+  border-radius: 32px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceItem p {
+  font-size: 20px;
+  width: 60%;
+}
+.decorRotatedElementTwo {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 200%;
+  height: 100%;
+  top: -30%;
+  transform: rotate(-10deg);
+}
+
+.mainFeatureWrapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.mainFeature {
+  background-color: #eeeeee;
+  padding: 50px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.featuresList li {
+  list-style: disc;
+  font-size: 20px;
+  color: #3e54ac;
+}
+
+.featuresListWhite li {
+  list-style: disc;
+  font-size: 20px;
+  color: #eeeeee;
+}
+
+.featuresListWrapp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.whiteBackground {
+  background-color: #eeeeee;
+  padding: 50px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.whiteBackground div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.whiteBackgroundOnBlue {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 50px;
+  border-radius: 32px;
+  display: flex;
+}
+
+.whiteBackground p {
+  color: #3e54ac;
+  font-size: 20px;
+}
+
+.whiteBackground li {
+  color: #3e54ac;
+  list-style: disc;
+  width: 100%;
+}
+
+.blueSection {
+  background: #3e54ac;
+}
+
+.blueSection .subtitle {
+  color: #eeeeee;
+}
+
+.whiteSection {
+  background: #eeeeee;
+}
+
+.whiteSection .subtitle {
+  color: #3e54ac;
+}
+
+.securityList {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 32px;
+  display: flex;
+  width: 40%;
+}
+
+.securityList li {
+  list-style: disc;
+  font-size: 20px;
+  color: #3e54ac;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: fit-content;
+  position: relative;
+  padding: 20px;
+  gap: 40px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Responsive for 1023px and below (tablet) */
+@media (max-width: 1023px) {
+  .whiteBackground,
+  .whiteBackgroundOnBlue {
+    padding: 30px;
+  }
+  .title {
+    width: 100%;
+  }
+  .sectionWrapper {
+    height: auto;
+    gap: 30px;
+  }
+  .sectionBody {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .introSectionContent {
+    gap: 30px;
+  }
+
+  .whyAviafyContent {
+    width: 100%;
+  }
+
+  .bodyReverse {
+    flex-direction: column-reverse;
+  }
+
+  .serviceList {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skyImage {
+    display: none;
+  }
+  .title {
+    font-size: 36px;
+  }
+
+  .subtitle {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .textBlue {
+    font-size: 18px;
+  }
+
+  .registerButton {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+
+  .serviceList {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sectionContent {
+    max-width: 100%;
+  }
+
+  .mainFeature {
+    padding: 30px;
+    gap: 30px;
+  }
+}
+
+/* Responsive for 768px and below (large mobile/small tablet) */
+@media (max-width: 768px) {
+  .whiteBackground,
+  .whiteBackgroundOnBlue {
+    padding: 20px;
+  }
+  .introSectionContent {
+    gap: 20px;
+  }
+  .serviceList {
+    grid-template-columns: 1fr;
+  }
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .textBlue {
+    font-size: 16px;
+  }
+
+  .registerButton {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .serviceList {
+    grid-template-columns: 1fr;
+  }
+  .sectionBody {
+    gap: 30px;
+  }
+  .mainFeature {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .sectionWrapper {
+    gap: 20px;
+  }
+}
+
+/* Responsive for 576px and below (small mobile) */
+@media (max-width: 576px) {
+  .introSectionContent {
+    gap: 10px;
+  }
+  .title {
+    font-size: 28px;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 14px !important;
+  }
+
+  .textBlue {
+    font-size: 14px;
+  }
+
+  .desctitle {
+    font-size: 20px;
+  }
+
+  .registerButton {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .serviceItem p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .sectionBody {
+    gap: 20px;
+  }
+
+  .mainFeature {
+    padding: 20px;
+    gap: 10px;
+  }
+
+  .sectionWrapper {
+    gap: 10px;
+  }
+
+  .featuresList li {
+    font-size: 14px;
+  }
+
+  .whiteBackground {
+    padding: 20px;
+  }
+}

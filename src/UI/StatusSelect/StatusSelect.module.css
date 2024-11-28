@@ -1,0 +1,42 @@
+/* StatusSelect.module.css */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select {
+  padding: 10px;
+  border: var(--kant_border_color);
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.approved {
+  color: rgb(11, 234, 78);
+}
+
+.pending {
+  color: rgb(235, 164, 32);
+}
+
+.canceled {
+  color: rgb(232, 77, 77);
+}
+
+.paid {
+  color: rgb(11, 234, 78);
+}
+
+.unpaid {
+  color: rgb(235, 164, 32);
+}
+
+.confirmed {
+  color: rgb(11, 234, 78);
+}
+
+.waiting {
+  color: rgb(235, 164, 32);
+}
